@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+
+.bg-img {
+   background-image: url("../images/spinach.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.bg-img:before {
+   content: "";
+   position: absolute;
+   top: 80px;
+   left: 0;
+   width: 100%;
+   height: inherit;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@tailwind utilities;

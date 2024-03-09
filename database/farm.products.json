@@ -1,0 +1,389 @@
+[{
+  "_id": {
+    "$oid": "64be564f5ef3af1a9837893e"
+  },
+  "name": "carrot carrot",
+  "tags": [
+    "carrot",
+    "  organic"
+  ],
+  "price": 50,
+  "quantity": 99,
+  "image": [
+    {
+      "thumb": "https://i.ibb.co/rQQ4KW0/blob.jpg",
+      "image": "https://i.ibb.co/x22JK4L/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/rQQ4KW0/48dbd78e372c7fae7cf3b7c869bec007",
+      "_id": {
+        "$oid": "64be564f5ef3af1a9837893f"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/3rYh8Wy/blob.webp",
+      "image": "https://i.ibb.co/NVnYkp6/blob.webp",
+      "medium": null,
+      "delete_url": "https://ibb.co/3rYh8Wy/a13ab1daa766936c67336adc5b568dce",
+      "_id": {
+        "$oid": "64be564f5ef3af1a98378940"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/Wy5V6fs/blob.jpg",
+      "image": "https://i.ibb.co/MVSBs79/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/Wy5V6fs/a0e14a898def19e0c41840f1ff288cdd",
+      "_id": {
+        "$oid": "64be564f5ef3af1a98378941"
+      }
+    }
+  ],
+  "category": {
+    "$oid": "6489afae12c26a431e89a1ad"
+  },
+  "farmer": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "createdAt": {
+    "$date": "2023-07-24T10:45:35.068Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-27T06:31:51.169Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64be56695ef3af1a98378991"
+  },
+  "name": "capcium",
+  "tags": [
+    "capcium",
+    " organic"
+  ],
+  "price": 50,
+  "quantity": 93,
+  "image": [
+    {
+      "thumb": "https://i.ibb.co/gSYVGFB/blob.jpg",
+      "image": "https://i.ibb.co/Mcd6b53/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/gSYVGFB/095ea402dc7e68dffb9c64bce444beff",
+      "_id": {
+        "$oid": "64be56695ef3af1a98378992"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/Tv14nzG/blob.jpg",
+      "image": "https://i.ibb.co/ZLSBwyr/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/Tv14nzG/e3a7d37f4ba79be2523922be2c9460de",
+      "_id": {
+        "$oid": "64be56695ef3af1a98378993"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/1vKPRpr/blob.jpg",
+      "image": "https://i.ibb.co/FxJy8f5/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/1vKPRpr/d56c4709812fb9acbd6cd2bf4800cc31",
+      "_id": {
+        "$oid": "64be56695ef3af1a98378994"
+      }
+    }
+  ],
+  "category": {
+    "$oid": "6489afae12c26a431e89a1ad"
+  },
+  "farmer": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "createdAt": {
+    "$date": "2023-07-24T10:46:01.410Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-15T12:40:16.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64be56885ef3af1a983789e5"
+  },
+  "name": "cauliflower",
+  "tags": [
+    "cauliflower",
+    " organic"
+  ],
+  "price": 80,
+  "quantity": 96,
+  "image": [
+    {
+      "thumb": "https://i.ibb.co/r4nnWLW/blob.jpg",
+      "image": "https://i.ibb.co/TmzzCnC/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/r4nnWLW/008c250ea0e9bb61ac6f732dfd3a80d6",
+      "_id": {
+        "$oid": "64be56885ef3af1a983789e6"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/GWfVxS9/blob.jpg",
+      "image": "https://i.ibb.co/QP76bwk/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/GWfVxS9/5232724aeca4e047d543dbee8894bf7a",
+      "_id": {
+        "$oid": "64be56885ef3af1a983789e7"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/47hVX12/blob.jpg",
+      "image": "https://i.ibb.co/Tk9g7W1/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/47hVX12/fa26f6ebbf66fb4789f8bc0f0174b134",
+      "_id": {
+        "$oid": "64be56885ef3af1a983789e8"
+      }
+    }
+  ],
+  "category": {
+    "$oid": "6489afae12c26a431e89a1ad"
+  },
+  "farmer": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "createdAt": {
+    "$date": "2023-07-24T10:46:32.292Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-15T12:38:00.458Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64be56b25ef3af1a98378a42"
+  },
+  "name": "broccoli",
+  "tags": [
+    "broccoli",
+    " organic"
+  ],
+  "price": 40,
+  "quantity": 98,
+  "image": [
+    {
+      "thumb": "https://i.ibb.co/LPx2SN2/blob.jpg",
+      "image": "https://i.ibb.co/N39HxTH/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/LPx2SN2/a74bbb30e8b0cc081111b3517a32702a",
+      "_id": {
+        "$oid": "64be56b25ef3af1a98378a43"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/Gc63BDM/blob.jpg",
+      "image": "https://i.ibb.co/2g9YmrM/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/Gc63BDM/0c42cde0c711866c1aa84ded2110410b",
+      "_id": {
+        "$oid": "64be56b25ef3af1a98378a44"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/Ryr8B36/blob.jpg",
+      "image": "https://i.ibb.co/FVZp05Y/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/Ryr8B36/a996b71f03fa36aeb07b32fb20ef7025",
+      "_id": {
+        "$oid": "64be56b25ef3af1a98378a45"
+      }
+    }
+  ],
+  "category": {
+    "$oid": "6489afae12c26a431e89a1ad"
+  },
+  "farmer": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "createdAt": {
+    "$date": "2023-07-24T10:47:14.359Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-15T12:38:00.458Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64be56cb5ef3af1a98378aa8"
+  },
+  "name": "cucumber",
+  "tags": [
+    "cucumber",
+    " juicy",
+    " organic"
+  ],
+  "price": 30,
+  "quantity": 100,
+  "image": [
+    {
+      "thumb": "https://i.ibb.co/rFVCvnF/blob.jpg",
+      "image": "https://i.ibb.co/7jqwb7j/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/rFVCvnF/59d8688cf692073935012029603cfe8e",
+      "_id": {
+        "$oid": "64be56cb5ef3af1a98378aa9"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/Ks7vrQs/blob.jpg",
+      "image": "https://i.ibb.co/Jp2Jsbp/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/Ks7vrQs/896e09082e8837252254b2b37cba78ae",
+      "_id": {
+        "$oid": "64be56cb5ef3af1a98378aaa"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/09P1B91/blob.jpg",
+      "image": "https://i.ibb.co/bvpYHvY/blob.jpg",
+      "medium": "https://i.ibb.co/5jqCYjC/blob.jpg",
+      "delete_url": "https://ibb.co/09P1B91/1963b8391d905c550410864f1ad8490c",
+      "_id": {
+        "$oid": "64be56cb5ef3af1a98378aab"
+      }
+    }
+  ],
+  "category": {
+    "$oid": "6489afae12c26a431e89a1ad"
+  },
+  "farmer": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "createdAt": {
+    "$date": "2023-07-24T10:47:39.683Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-24T10:47:39.683Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64be56e85ef3af1a98378b25"
+  },
+  "name": "sunflower oil ",
+  "tags": [
+    "sunflower",
+    "    oil ",
+    "    organic"
+  ],
+  "price": 200,
+  "quantity": 200,
+  "image": [
+    {
+      "thumb": "https://i.ibb.co/hfTsZRf/blob.jpg",
+      "image": "https://i.ibb.co/m8PJXC8/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/hfTsZRf/19d9a690e7a129637abd9b6a3742ef67",
+      "_id": {
+        "$oid": "64be56e85ef3af1a98378b26"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/37J2tCZ/blob.jpg",
+      "image": "https://i.ibb.co/Qf5LsKw/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/37J2tCZ/481df0fd4d21f61b9b7040995985338f",
+      "_id": {
+        "$oid": "64be57085ef3af1a98378c79"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/bRpQj7Y/blob.jpg",
+      "image": "https://i.ibb.co/HpmBLXR/blob.jpg",
+      "medium": "https://i.ibb.co/prCb6nN/blob.jpg",
+      "delete_url": "https://ibb.co/bRpQj7Y/c79c782a370761ac6decc9e099eadebb",
+      "_id": {
+        "$oid": "64be57085ef3af1a98378c7a"
+      }
+    }
+  ],
+  "category": {
+    "$oid": "64a97659665f5dee487b17bd"
+  },
+  "farmer": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "createdAt": {
+    "$date": "2023-07-24T10:48:08.340Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-24T10:48:45.571Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64c1e5362cff0cc4b5343489"
+  },
+  "name": "testing",
+  "tags": [
+    "testing"
+  ],
+  "price": 10,
+  "quantity": 10,
+  "image": [
+    {
+      "thumb": "https://i.ibb.co/t4FQLFR/blob.png",
+      "image": "https://i.ibb.co/JKgm3gZ/blob.png",
+      "medium": null,
+      "delete_url": "https://ibb.co/t4FQLFR/f9c9cee6f9ec3962fb6140932c6bb417",
+      "_id": {
+        "$oid": "64c1e5362cff0cc4b534348a"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/3THfM2D/blob.jpg",
+      "image": "https://i.ibb.co/dfybLFd/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/3THfM2D/dac53709d736aad951aa293e0eee3c02",
+      "_id": {
+        "$oid": "64c1e5362cff0cc4b534348b"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/jRWHgKC/blob.jpg",
+      "image": "https://i.ibb.co/GTtFcwZ/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/jRWHgKC/186ed672119da1b4a87db149b070cfff",
+      "_id": {
+        "$oid": "64c1e5362cff0cc4b534348c"
+      }
+    },
+    {
+      "thumb": "https://i.ibb.co/fYxVgdZ/blob.jpg",
+      "image": "https://i.ibb.co/xS7Kkqw/blob.jpg",
+      "medium": null,
+      "delete_url": "https://ibb.co/fYxVgdZ/3845aaf63e3b10fd24a1b460b6f74beb",
+      "_id": {
+        "$oid": "64c1e5362cff0cc4b534348d"
+      }
+    }
+  ],
+  "category": {
+    "$oid": "64a97653665f5dee487b17bb"
+  },
+  "farmer": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "description": "testing",
+  "createdAt": {
+    "$date": "2023-07-27T03:32:06.283Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-27T03:32:06.283Z"
+  },
+  "__v": 0
+}]

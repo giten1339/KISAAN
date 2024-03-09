@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+
+.nav-link {
+   @apply text-white hover:scale-110 transition-all duration-300 ease-in-out h-fit;
+}
+
+.hide-dropdown {
+   transform: translateY(-105%);
+}
+
+.drop-down {
+   @apply w-40 h-auto bg-[rgba(90,135,74,0.3)]  relative  ml-auto mr-28  transition-all duration-150 ease-in-out ;
+}
+
+.dropdown-list {
+   @apply py-2 mt-0.5 px-4 hover:bg-main hover:scale-110 hover:cursor-pointer bg-[rgba(90,135,74,0.5)] active:scale-105 hover:shadow-lg;
+   @apply transition-all duration-150 ease-in-out 
+}
+@tailwind utilities;

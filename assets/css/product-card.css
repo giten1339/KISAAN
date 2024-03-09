@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+
+.product-card,
+.product-actions {
+   transition: all 0.3s ease-in-out;
+}
+.product-card:hover {
+   transform: translateY(15px);
+}
+
+.product-actions {
+   opacity: 0;
+   /* transition: all; */
+}
+.product-card:hover .product-actions {
+   transform: translateY(-100px);
+   animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.product-card:not(:hover) .product-actions {
+   animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 0.5;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes fadeOut {
+   0% {
+      opacity: 1;
+   }
+   50% {
+      opacity: 0.5;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+.success {
+   background-color: #1b4332;
+}
+
+.info {
+   background-color: #005f73;
+}
+
+.warning {
+   background-color: #ff7b25;
+}
+
+@tailwind utilities;

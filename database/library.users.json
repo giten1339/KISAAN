@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6548cfbb3734e93644d53be0"
+  },
+  "address": "123 Main Street, Cityville",
+  "photo": "",
+  "points": 0,
+  "activeTransactions": [],
+  "prevTransactions": [],
+  "isAdmin": true,
+  "userType": "student",
+  "userFullName": "Aditya",
+  "admissionId": "STU123",
+  "employeeId": "EMP123",
+  "age": 20,
+  "dob": "2003-01-15",
+  "gender": "male",
+  "mobileNumber": {
+    "$numberLong": "9876543214"
+  },
+  "email": "aditya@gmail.com",
+  "password": "$2b$10$6K8cl1n9D97MuZbojCX1bulKXDA0AmyMK31CHGbbIDURS1tk9.eJ.",
+  "createdAt": {
+    "$date": "2023-11-06T11:36:27.144Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-06T11:36:27.144Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6548d976e67c910ca4c9ab1b"
+  },
+  "address": "bhadrapur",
+  "photo": "",
+  "points": 0,
+  "activeTransactions": [],
+  "prevTransactions": [],
+  "isAdmin": false,
+  "userType": "Student",
+  "userFullName": "aditya gautam",
+  "admissionId": "123",
+  "employeeId": null,
+  "age": 17,
+  "dob": "05/29/2000",
+  "gender": "Male",
+  "mobileNumber": {
+    "$numberLong": "9840995979"
+  },
+  "email": "adityagautam@gmail.com",
+  "password": "$2b$10$Cr8n0CV1093wcq16rMgcre5OY3r69qynvBPuTsh6Cvy8FI2UKT/Im",
+  "createdAt": {
+    "$date": "2023-11-06T12:17:58.748Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-06T12:17:58.748Z"
+  },
+  "__v": 0
+}]

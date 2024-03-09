@@ -1,0 +1,13 @@
+.hide-right-sidebar {
+   transform: translateX(100%);
+}
+.hide-overlay {
+   display: none;
+}
+
+.custom-scrollbar {
+   overflow-y: auto;
+   scroll-behavior: smooth;
+   scrollbar-color: #f5f5f5 #0f0d0d;
+   scrollbar-width: thin;
+}

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+
+.sidebar-item {
+   @apply w-full cursor-pointer pl-5 py-4 font-thin transition-all duration-200 ease-in-out active:scale-105 !important;
+   border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-item:hover {
+   @apply font-semibold  bg-main scale-110 text-white  shadow-lg !important;
+}
+
+.sidebar-item:hover .counter {
+   @apply bg-white text-main !important;
+}
+
+.counter {
+   @apply rounded-full bg-main relative bottom-3 text-white  px-2 text-sm;
+}
+
+.sidebar {
+   border-right: 2px solid #e2e8f0;
+}
+
+.active {
+   @apply font-semibold  bg-main  text-white  shadow-lg;
+}
+@tailwind utilities;

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+
+/* alert section */
+.success {
+}
+.info {
+}
+.warning {
+}
+.danger {
+}
+
+.custom-alert {
+   @apply py-5 bg-[#071d1e] text-white text-center  transition-all duration-200 ease-in-out fixed top-0 left-0 right-0 z-50;
+}
+
+.alert-hide {
+   transform: translateY(-100%);
+}
+
+/* dropdown section */
+
+@tailwind utilities;

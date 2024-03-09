@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+
+.status:hover {
+   @apply cursor-pointer;
+}
+
+@tailwind utilities;

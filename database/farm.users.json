@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "648acc900f6b73662888de2c"
+  },
+  "name": "luffy uzumaki",
+  "email": "luffyd.uzumaki522@gmail.com",
+  "image": "https://lh3.googleusercontent.com/a/AAcHTtdM59MWAtEQVV8ZS87n_O5tbnXWcPOiJL2u1FJk=s96-c",
+  "userType": "farmer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a18f402c3ac32e9fe0ff59"
+  },
+  "name": "Rejens Raya",
+  "email": "rejensraya@gmail.com",
+  "image": "https://lh3.googleusercontent.com/a/AAcHTteRgme-OyNz6DMnQErEkmiqWpKl9Mva7G3TmgtFuACiNqg=s96-c",
+  "userType": "consumer",
+  "phone": "9779817940750",
+  "createdAt": {
+    "$date": "2023-07-02T14:52:48.829Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-10T12:32:36.995Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b503c38f599c4167702b70"
+  },
+  "name": "Rock On",
+  "email": "ruckon3@gmail.com",
+  "image": "https://lh3.googleusercontent.com/a/AAcHTtdrDrJMGMEAXwF23c7gNuvBy2NSdsUfWcyfVMleTPMw=s96-c",
+  "userType": "consumer",
+  "phone": "false",
+  "createdAt": {
+    "$date": "2023-07-17T09:02:59.625Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-17T09:02:59.625Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b657d6032c50088d963eff"
+  },
+  "name": "Rejens",
+  "email": "rejens933@gmail.com",
+  "image": "https://lh3.googleusercontent.com/a/AAcHTtf2L8s4KREFWDjbXe4wfMvedc6i7e2IV3Fp3_Lg5oDm=s96-c",
+  "userType": "admin",
+  "phone": "9779840995979",
+  "createdAt": {
+    "$date": "2023-07-18T09:13:58.215Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-18T09:15:35.350Z"
+  },
+  "__v": 0
+}]

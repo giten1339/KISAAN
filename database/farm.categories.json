@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "6489afae12c26a431e89a1ad"
+  },
+  "name": "vegetables",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6489afb512c26a431e89a1af"
+  },
+  "name": "dairy",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a97601665f5dee487b17b7"
+  },
+  "name": "fruits",
+  "createdAt": {
+    "$date": "2023-07-08T14:43:13.405Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-08T14:43:13.405Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a9760b665f5dee487b17b9"
+  },
+  "name": "grains",
+  "createdAt": {
+    "$date": "2023-07-08T14:43:23.687Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-08T14:43:23.687Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a97653665f5dee487b17bb"
+  },
+  "name": "spices",
+  "createdAt": {
+    "$date": "2023-07-08T14:44:35.159Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-08T14:44:35.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a97659665f5dee487b17bd"
+  },
+  "name": "oil",
+  "createdAt": {
+    "$date": "2023-07-08T14:44:41.171Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-08T14:44:41.171Z"
+  },
+  "__v": 0
+}]

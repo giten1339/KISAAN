@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+
+.cat-item {
+   @apply pr-32 cursor-pointer pl-5 py-4 border-gray-200 border font-thin !important;
+   transition: all 0.2s ease-in-out;
+}
+
+.cat-item:hover {
+   @apply font-semibold bg-main scale-110 text-white !important;
+}
+
+.cat-title {
+   @apply pr-32 cursor-pointer pl-5 py-4 border-gray-200 border font-semibold bg-main text-white font-mono text-xl;
+}
+
+.honey {
+   background-image: url("../images/honey.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@tailwind utilities;

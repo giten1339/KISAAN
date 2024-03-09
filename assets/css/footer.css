@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+.icon {
+   @apply transition-all duration-300 ease-in-out text-2xl;
+}
+.icon:hover {
+   @apply text-main;
+    cursor:pointer;
+}
+
+@tailwind utilities;
