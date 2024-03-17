@@ -1,51 +1,66 @@
+ // Instructs React to only render this component on the client-side (in the browser).
 "use client";
-import React, { useEffect, useState } from "react";
-import NProgress from "nprogress";
-import Router from "next/router";
-import PropTypes from "prop-types";
 
+import React, { useEffect, useState } from "react";
+import NProgress from "nprogress"; // Library for managing a progress bar UI.
+import Router from "next/router"; // Handles routing within Next.js applications.
+import PropTypes from "prop-types"; // For type checking component props.
+
+// Configure NProgress to hide the default spinner (we won't use it here).
 NProgress.configure({ showSpinner: false });
 
 const NextProgressBar = ({
-   color = "#29D",
-   startPosition = 0.3,
-   stopDelayMs = 200,
-   height = 3,
-   options,
+  // Define props for customization (with defaults):
+  color = "#29D", // Color of the progress bar.
+  startPosition = 0.3, // Starting position of the progress bar (0 to 1).
+  stopDelayMs = 200, // Delay in milliseconds before hiding the progress bar.
+  height = 3, // Height of the progress bar in pixels.
+  options, // Optional custom options to pass to NProgress.configure().
 }) => {
-   const [timer, setTimer] = useState(null);
+  const [timer, setTimer] = useState(null); // State variable to hold the timeout ID.
 
-   useEffect(() => {
-      if (options) {
-         NProgress.configure(options);
-      }
+  // Effect hook that runs on component mount and whenever options, stopDelayMs, startPosition, or timer changes.
+  useEffect(() => {
+    if (options) { // If custom options are provided, apply them to NProgress configuration.
+      NProgress.configure(options);
+    }
 
-      const routeChangeStart = () => {
-         NProgress.set(startPosition);
-         NProgress.start();
-      };
+    // Function to handle route change start event:
+    const routeChangeStart = () => {
+      // Set the initial progress bar position.
+      NProgress.set(startPosition);
+      // Start the progress bar animation.
+      NProgress.start();
+    };
 
-      const routeChangeEnd = () => {
-         clearTimeout(timer);
-         setTimer(
-            setTimeout(() => {
-               NProgress.done(true);
-            }, stopDelayMs)
-         );
-      };
+    // Function to handle route change end or error event:
+    const routeChangeEnd = () => {
+      // Clear any existing timeout.
+      clearTimeout(timer);
 
-      Router.events.on("routeChangeStart", routeChangeStart);
-      Router.events.on("routeChangeComplete", routeChangeEnd);
-      Router.events.on("routeChangeError", routeChangeEnd);
+      // Set a new timeout to hide the progress bar after the specified delay.
+      setTimer(
+        setTimeout(() => {
+          NProgress.done(true); // Hide the progress bar with a smooth animation.
+        }, stopDelayMs)
+      );
+    };
 
-      return () => {
-         Router.events.off("routeChangeStart", routeChangeStart);
-         Router.events.off("routeChangeComplete", routeChangeEnd);
-         Router.events.off("routeChangeError", routeChangeEnd);
-      };
-   }, [options, stopDelayMs, startPosition, timer]);
+    // Attach event listeners for route changes:
+    Router.events.on("routeChangeStart", routeChangeStart);
+    Router.events.on("routeChangeComplete", routeChangeEnd);
+    Router.events.on("routeChangeError", routeChangeEnd); // Handle route change errors as well.
 
-   return (
+    // Cleanup function to detach event listeners when the component unmounts.
+    return () => {
+      Router.events.off("routeChangeStart", routeChangeStart);
+      Router.events.off("routeChangeComplete", routeChangeEnd);
+      Router.events.off("routeChangeError", routeChangeEnd);
+    };
+  }, [options, stopDelayMs, startPosition, timer]);
+
+  // This component doesn't render any JSX directly, but it applies styles globally using styled-jsx.
+  return (
       <style jsx global>
          {`
             #nprogress {
@@ -130,7 +145,7 @@ const NextProgressBar = ({
 NextProgressBar.propTypes = {
    color: PropTypes.string,
    startPosition: PropTypes.number,
-   stopDelayMs: PropTypes.number,
+   stopDelayMs: PropTypes.number,         
    options: PropTypes.object,
 };
 

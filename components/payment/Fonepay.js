@@ -1,5 +1,5 @@
 import crypto from "crypto";
-
+// Initialize variables
 let DV = "";
 let userId = "";
 
@@ -17,17 +17,19 @@ export async function addVerificationDetails(blockNumber = null) {
    );
    return res;
 }
-
+// Function to submit the payment form
 export async function submitForm() {
    const res = await addVerificationDetails();
    if (res) document.querySelector("#submit").click();
 }
-
+// React component for the Fonepay payment page
 export default function FonepayPaymentPage({
    total,
    userId: idUser,
    shippingId,
 }) {
+      // Set up variables for the payment
+
    userId = idUser;
    const MD = "P";
    const AMT = total;
@@ -51,6 +53,7 @@ export default function FonepayPaymentPage({
       "https://dev-clientapi.fonepay.com/api/merchantRequest";
 
    //for submitting the form
+   
 
    return (
       <form method="GET" id="payment-form" action={paymentDevUrl}>

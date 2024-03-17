@@ -4,8 +4,10 @@ import connectDB from "@/utils/database";
 import User from "@/models/User";
 import Cart from "@/models/Cart";
 import Wishlist from "@/models/Wishlist";
+// Define authentication options
 
 const authOptions = {
+      // Specify the providers for NextAuth
    providers: [
       GoogleProvider({
          clientId: process.env.GOOGLE_ID,
@@ -20,6 +22,7 @@ const authOptions = {
          },
       }),
    ],
+  
    callbacks: {
       async signIn({ profile }) {
          const { email, name, picture: image } = profile;
