@@ -1,8 +1,9 @@
+import React from "react";
 import Image from "next/image";
 import Carousel from "@/components/products/ProductCarousel";
 import Button from "@/components/shared/Button";
 import Link from "next/link";
-import "@/assets/css/hero.css";
+import "@/assets/css/hero.css"; // Importing CSS file
 import img1 from "@/assets/images/image1.jpg";
 import img2 from "@/assets/images/image2.jpeg";
 import img3 from "@/assets/images/image3.jpg";
@@ -13,48 +14,37 @@ export default function Home() {
          <br />
          <div className="w-4/5 mx-auto">
             <div className="flex gap-10">
-               {/* categories section */}
+               {/* Categories section */}
                <div className="">
                   <ul className="w-fit">
                      <li className="cat-title ">CATEGORIES</li>
-                     <Link
-                        href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=dairy`}
-                     >
+                     {/* Using Link from Next.js for category links */}
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=dairy`}>
                         <li className="cat-item">Dairy</li>
                      </Link>
 
-                     <Link
-                        href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=vegetables`}
-                     >
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=vegetables`}>
                         <li className="cat-item">Vegetables</li>
                      </Link>
 
-                     <Link
-                        href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=fruits`}
-                     >
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=fruits`}>
                         <li className="cat-item">Fruits</li>
                      </Link>
 
-                     <Link
-                        href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=grains`}
-                     >
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=grains`}>
                         <li className="cat-item">Grains</li>
                      </Link>
 
-                     <Link
-                        href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=spices`}
-                     >
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=spices`}>
                         <li className="cat-item">Spices</li>
                      </Link>
 
-                     <Link
-                        href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=oil`}
-                     >
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=oil`}>
                         <li className="cat-item">Oil</li>
                      </Link>
                   </ul>
                </div>
-               {/* image section */}
+               {/* Image section */}
                <div className="flex-auto honey px-5">
                   <div className="w-1/3 flex h-full flex-col justify-center gap-3 ">
                      <h3 className="text-xl font-semibold text-main ">
@@ -64,6 +54,7 @@ export default function Home() {
                         Tasty & Healthy Organic food
                      </h1>
                      <br />
+                     {/* Using Button component with proper props */}
                      <Button text={"SHOP NOW"} hover={true} link="/shop" />
                   </div>
                </div>
@@ -72,10 +63,11 @@ export default function Home() {
 
          <div className="flex h-[70vh] my-10">
             <div className="h-auto w-3/4 relative">
+               {/* Using Image component from Next.js */}
                <Image
                   src={img1}
                   alt="image 1"
-                  className=" h-full w-full object-cover "
+                  className="h-full w-full object-cover "
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCA"
                />
@@ -90,6 +82,7 @@ export default function Home() {
                      </p>
 
                      <div className="mt-4">
+                        {/* Using Button component with proper props */}
                         <Button
                            text="shop now"
                            additionalClass="hover:scale-110 px-3 py-2 rounded-sm"
@@ -100,6 +93,7 @@ export default function Home() {
                </div>
             </div>
             <div className=" h-auto w-auto ">
+               {/* Using Image component from Next.js */}
                <Image
                   src={img2}
                   alt="image 2"
@@ -107,6 +101,7 @@ export default function Home() {
                   placeholder="blur"
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCA"
                />
+               {/* Using Image component from Next.js */}
                <Image
                   src={img3}
                   alt="image 3"
@@ -117,7 +112,7 @@ export default function Home() {
             </div>
          </div>
 
-         <Carousel />
+         <Carousel /> {/* Including Carousel component */}
       </main>
    );
 }

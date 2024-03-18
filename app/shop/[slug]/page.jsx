@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import ProductDetailsIcon from "@/components/products/ProductDetailsIcon";
-import ImageDisplay from "@/components/products/ImageDisplay";
+// Importing necessary components
+import ProductDetailsIcon from "@/components/products/ProductDetailsIcon"; // Assuming correct import path
+import ImageDisplay from "@/components/products/ImageDisplay"; // Assuming correct import path
 
+// Function to fetch product details from API
 const fetchProduct = async (id) => {
    const res = await fetch(
       `${process.env.NEXT_PUBLIC_SITE_URL}/api/products?id=${id}`,
@@ -16,12 +18,14 @@ const fetchProduct = async (id) => {
    return data;
 };
 
-export default async function page({ params: { slug: productId } }) {
+// Page component
+export default async function Page({ params: { slug: productId } }) {
+   // Fetch product details
    const product = await fetchProduct(productId);
 
    return (
       <div className="min-h-[90vh] mb-10">
-         {/* product details */}
+         {/* Product details section */}
          <div className="flex justify-center my-5  ">
             <span className="text-3xl text-main group  transition duration-300 cursor-pointer">
                Product Details
@@ -30,11 +34,12 @@ export default async function page({ params: { slug: productId } }) {
          </div>
          <div className="w-3/4 mx-auto">
             <div className="flex flex-1  gap-10 ">
-               {/* product images */}
+               {/* Product images */}
                <div>
                   <ImageDisplay product={product} />
                </div>
 
+               {/* Product details */}
                <div className="details">
                   <h1 className="text-3xl font-semibold uppercase text-main font-serif my-3">
                      {product.name}
@@ -44,19 +49,22 @@ export default async function page({ params: { slug: productId } }) {
                   </h3>
                   <h3>
                      Tags :{" "}
-                     {product.tags.map((tag) => (
-                        <Link href="#" className="hover:text-main">
+                     {/* Mapping through product tags and rendering links */}
+                     {product.tags.map((tag, index) => (
+                        <Link key={index} href="#" className="hover:text-main">
                            {" "}
-                           {tag} ,
+                           {tag}{index !== product.tags.length - 1 && ','}
                         </Link>
                      ))}
                   </h3>
                   <h3>
                      Category :{" "}
+                     {/* Rendering category link */}
                      <Link href="#" className="hover:text-main">
                         {product.category.name}
                      </Link>
                   </h3>
+                  {/* Rendering product details icons */}
                   <ProductDetailsIcon product={product} />
                   <div>
                      <h1 className="text-xl">Product Details</h1>
@@ -72,7 +80,7 @@ export default async function page({ params: { slug: productId } }) {
          <br />
          <hr />
          <br />
-         {/* farmer details */}
+         {/* Farmer details section */}
          <div className="flex justify-center my-5  ">
             <span className="text-3xl text-main group  transition duration-300 cursor-pointer">
                Farmer Details
@@ -88,6 +96,7 @@ export default async function page({ params: { slug: productId } }) {
                   <h3>{product.farmer.email}</h3>
                </div>
                <div className="rounded-full">
+                  {/* Rendering farmer image */}
                   <Image
                      src={product.farmer.image}
                      alt="farmer image"

@@ -1,13 +1,17 @@
 import React from "react";
 import Image from "next/image";
 
+// Importing the image
 import img1 from "@/assets/images/about.jpg";
 
+// Importing the CSS file
 import "@/assets/css/about.css";
 
-export default function page() {
+// Page component
+export default function Page() {
    return (
       <div>
+         {/* Banner */}
          <div className={`w-full h-96 bg-img`}>
             <div className="text-white z-[19] relative pt-10 px-10">
                <p className="text-lg w-1/2">
@@ -20,18 +24,9 @@ export default function page() {
             </div>
          </div>
 
-         {/* description about the platform */}
-         {/* <div className="flex flex-col justify-center items-center mt-10">
-            <div className="text-4xl font-bold">ABOUT US</div>
-            <div className="w-1/2 text-center mt-5">
-               We are a team of passionate individuals who believe in the
-               importance of good food and the impact it has on our lives. We
-               want to make it easier for people to access healthy and
-               nutritious food, and to support local farmers and producers.
-            </div>
-         </div> */}
-
+         {/* Description about the platform */}
          <div className="w-4/5 mx-auto flex mt-10 gap-5">
+            {/* Image */}
             <div style={{ flex: 1 }}>
                <Image
                   src={img1}
@@ -41,6 +36,7 @@ export default function page() {
                   blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCA"
                />
             </div>
+            {/* Text */}
             <div style={{ flex: 1 }} className="text-justify">
                We are a team of passionate individuals who believe in the
                importance of good food and the impact it has on our lives. We
