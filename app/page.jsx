@@ -31,16 +31,19 @@ export default function Home() {
                         <li className="cat-item">Fruits</li>
                      </Link>
 
-                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=grains`}>
-                        <li className="cat-item">Grains</li>
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=seeds`}>
+                        <li className="cat-item">Seeds</li>
                      </Link>
 
-                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=spices`}>
-                        <li className="cat-item">Spices</li>
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=horticulture`}>
+                        <li className="cat-item">Horticulture</li>
                      </Link>
 
                      <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=oil`}>
                         <li className="cat-item">Oil</li>
+                     </Link>
+                     <Link href={`${process.env.NEXT_PUBLIC_SITE_URL}/shop?category=floriculture`}>
+                        <li className="cat-item">Floriculture</li>
                      </Link>
                   </ul>
                </div>

@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration for Kisan(farm)
 const firebaseConfig = {
    apiKey: "AIzaSyDQpjqtOVaiuvg3tFXnxHgC-yCOVPB8lA0",
    authDomain: "farm-389707.firebaseapp.com",

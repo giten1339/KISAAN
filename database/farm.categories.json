@@ -29,7 +29,7 @@
   "_id": {
     "$oid": "64a9760b665f5dee487b17b9"
   },
-  "name": "grains",
+  "name": "seeds",
   "createdAt": {
     "$date": "2023-07-08T14:43:23.687Z"
   },
@@ -42,7 +42,7 @@
   "_id": {
     "$oid": "64a97653665f5dee487b17bb"
   },
-  "name": "spices",
+  "name": "horticulture",
   "createdAt": {
     "$date": "2023-07-08T14:44:35.159Z"
   },
@@ -63,4 +63,18 @@
     "$date": "2023-07-08T14:44:41.171Z"
   },
   "__v": 0
-}]
+},
+{
+  "_id": {
+    "$oid": "65fa6d6f5a7b39b885866ac4"
+  },
+  "name": "floriculture",
+  "createdAt": {
+    "$date": "2023-07-08T14:44:41.171Z"
+  },
+  "updatedAt": {
+    "$date": "2023-07-08T14:44:41.171Z"
+  },
+  "__v": 0
+}
+]
