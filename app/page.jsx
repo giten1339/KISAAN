@@ -80,8 +80,7 @@ export default function Home() {
                         A Place of All Organic Products
                      </h1>
                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Minima, magnam.
+                        We sense the importance of organic food.
                      </p>
 
                      <div className="mt-4">

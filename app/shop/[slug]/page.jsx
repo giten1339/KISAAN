@@ -69,10 +69,7 @@ export default async function Page({ params: { slug: productId } }) {
                   <div>
                      <h1 className="text-xl">Product Details</h1>
                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Saepe, qui expedita dolor in explicabo illo maiores
-                        quasi. Ex, optio harum.
-                     </p>
+                       Purely organic and Homemade producs.                    </p>
                   </div>
                </div>
             </div>
@@ -94,6 +91,10 @@ export default async function Page({ params: { slug: productId } }) {
                      {product.farmer.name}
                   </h1>
                   <h3>{product.farmer.email}</h3>
+                  <h3>{product.farmer.phone}</h3>
+                  <h3>{product.farmer.address}</h3>
+
+
                </div>
                <div className="rounded-full">
                   {/* Rendering farmer image */}

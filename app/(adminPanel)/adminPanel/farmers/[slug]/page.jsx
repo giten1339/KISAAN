@@ -67,8 +67,9 @@ export default async function ViewOrder({ params: { slug: orderId } }) {
 
                   <div className="my-2">
                      <span className="mx-2">Address:</span>
-                     {item.farmer.address || "address not provided"} {/* Displaying farmer's address or default message */}
+                     {item.farmer.address } {/* Displaying farmer's address */}
                   </div>
+                  
                </div>
             </div>
          </div>

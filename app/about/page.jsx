@@ -38,10 +38,8 @@ export default function Page() {
             </div>
             {/* Text */}
             <div style={{ flex: 1 }} className="text-justify">
-               We are a team of passionate individuals who believe in the
-               importance of good food and the impact it has on our lives. We
-               want to make it easier for people to access healthy and
-               nutritious food, and to support local farmers and producers.
+              
+               Welcome to Kisan, an innovative ecommerce platform connecting farmers with consumers. Founded by a passionate team consisting of Gitindra Chapagain, Hritik Subedi, and Sudhir Lohani, Kisan aims to bridge the gap between agriculture and modern commerce. With expertise in technical architecture, frontend development, and backend management, our team ensures a seamless and user-friendly experience. Kisan isn't just a college project; it's a vision to empower both farmers and consumers by facilitating direct transactions and promoting locally sourced goods. Join us in revolutionizing the agricultural landscape—one harvest at a time. Welcome to Kisan!
             </div>
          </div>
       </div>
