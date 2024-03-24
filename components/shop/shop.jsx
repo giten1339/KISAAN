@@ -1,16 +1,21 @@
+// shop.jsx
 import React, { useEffect, useState } from 'react';
-import collaborativeFiltering from '../../algorithms/collaborativeFiltering';
+import { getRecommendations } from '../../algorithms/collaborativeFiltering';
 
 function Shop() {
    const [recommendations, setRecommendations] = useState([]);
    
    useEffect(() => {
       async function fetchUserData() {
-         // Fetch user data from your database
-         const users = await fetch('/api/users').then(res => res.json());
-         const currentUser = 'user1'; // Replace with the actual current user
-         const recommendations = collaborativeFiltering(users, currentUser);
-         setRecommendations(recommendations);
+         try {
+            // Fetch user data from your backend API
+            const users = await fetch('/api/users').then(res => res.json());
+            const currentUser = getCurrentUserId; // Replace with the actual current user
+            const recommendations = getRecommendations(users, currentUser);
+            setRecommendations(recommendations);
+         } catch (error) {
+            console.error('Error fetching user data:', error);
+         }
       }
       
       fetchUserData();
@@ -25,3 +30,5 @@ function Shop() {
       </div>
    );
 }
+
+export default Shop;

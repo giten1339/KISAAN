@@ -1,13 +1,9 @@
+// collaborativeFiltering.js
 // A function to compute the Euclidean distance score between two users
-function euclideanScore(users, user1, user2) {
-  const itemsUser1 = users[user1];
-  const itemsUser2 = users[user2];
-
-  // Returns 0 if they have no ratings in common
+function euclideanScore(itemsUser1, itemsUser2) {
   const commonItems = Object.keys(itemsUser1).filter(item => itemsUser2[item] !== undefined);
   if (commonItems.length === 0) return 0;
 
-  // Add up the squares of all the differences
   let sumOfSquares = commonItems.reduce((sum, item) => {
     return sum + Math.pow(itemsUser1[item] - itemsUser2[item], 2);
   }, 0);
@@ -16,39 +12,27 @@ function euclideanScore(users, user1, user2) {
 }
 
 // A function to get recommendations for a user
-function getRecommendations(users, user) {
+export function getRecommendations(users, currentUser) {
+  const currentUserItems = users.find(user => user.userId === currentUser)?.items || {};
   const totals = {};
   const simSums = {};
-  for (let otherUser in users) {
-    if (otherUser === user) continue;
-    const sim = euclideanScore(users, user, otherUser);
-    if (sim <= 0) continue;
-    for (let item in users[otherUser]) {
-      // Only score items the user hasn't seen yet
-      if (users[user][item] === undefined) {
-        // Similarity * Score
-        totals[item] = totals[item] || 0;
-        totals[item] += users[otherUser][item] * sim;
-        // Sum of similarities
-        simSums[item] = simSums[item] || 0;
-        simSums[item] += sim;
+
+  users.forEach(otherUser => {
+    if (otherUser.userId === currentUser) return;
+    const sim = euclideanScore(currentUserItems, otherUser.items);
+    if (sim <= 0) return;
+    Object.keys(otherUser.items).forEach(item => {
+      if (!currentUserItems[item]) {
+        totals[item] = (totals[item] || 0) + otherUser.items[item] * sim;
+        simSums[item] = (simSums[item] || 0) + sim;
       }
-    }
-  }
-
-  // Create the normalized list
-  const rankings = [];
-  for (let item in totals) {
-    rankings.push({
-      item: item,
-      score: totals[item] / simSums[item]
     });
-  }
+  });
 
-  // Return the sorted list
+  const rankings = Object.keys(totals).map(item => ({
+    item,
+    score: totals[item] / simSums[item]
+  }));
+
   return rankings.sort((a, b) => b.score - a.score);
-}
-
-export default function collaborativeFiltering(users, user) {
-  return getRecommendations(users, user);
 }

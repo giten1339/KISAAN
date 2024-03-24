@@ -1,11 +1,18 @@
-import React, { useContext } from 'react';
-import collaborativeFiltering from '../algorithms/collaborativeFiltering.js';
+// wishlist.jsx
+import React, { useContext, useEffect, useState } from 'react';
+import { getRecommendations } from '../algorithms/collaborativeFiltering.js';
 import { WishlistContext } from '../context/wishlistContext';
 
 function Wishlist() {
    const { wishlist } = useContext(WishlistContext);
-   const recommendations = collaborativeFiltering(wishlist, currentUser);
-  // Render your component here, using the recommendations
+   const [recommendations, setRecommendations] = useState([]);
+   const currentUser = getCurrentUserId; 
+   
+   useEffect(() => {
+      const recommendations = getRecommendations(wishlist, currentUser);
+      setRecommendations(recommendations);
+   }, [wishlist, currentUser]);
+
    return (
       <div>
          {wishlist.map((item) => (
@@ -18,3 +25,5 @@ function Wishlist() {
       </div>
    );
 }
+
+export default Wishlist;
